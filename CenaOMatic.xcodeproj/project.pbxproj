@@ -1,0 +1,652 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5868C7BFDE03BE42893F6906 /* Pods_CenaOMatic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0430085B0140835B904A7F1 /* Pods_CenaOMatic.framework */; };
+		AA48ACE321CD5C0100F20F6E /* MealEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA48ACE221CD5C0100F20F6E /* MealEntity.swift */; };
+		AA48ACE621CD5EF200F20F6E /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA48ACE521CD5EF200F20F6E /* Repository.swift */; };
+		AA48ACE821CD5F2000F20F6E /* LocalMealRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA48ACE721CD5F2000F20F6E /* LocalMealRepository.swift */; };
+		AA48ACEA21CD624600F20F6E /* LocalParticipantRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA48ACE921CD624600F20F6E /* LocalParticipantRepository.swift */; };
+		AA74212B21D113DE009DADE8 /* ParticipantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA74212921D113DE009DADE8 /* ParticipantsViewController.swift */; };
+		AA74212C21D113DE009DADE8 /* ParticipantsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA74212A21D113DE009DADE8 /* ParticipantsViewController.xib */; };
+		AA74213621D11633009DADE8 /* ParticipantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA74213421D11633009DADE8 /* ParticipantTableViewCell.swift */; };
+		AA74213721D11633009DADE8 /* ParticipantTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA74213521D11633009DADE8 /* ParticipantTableViewCell.xib */; };
+		AA75694C21CD477E001464FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA75694B21CD477E001464FA /* AppDelegate.swift */; };
+		AA75695321CD4780001464FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA75695221CD4780001464FA /* Assets.xcassets */; };
+		AA75695621CD4780001464FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA75695421CD4780001464FA /* LaunchScreen.storyboard */; };
+		AA771AE021E73CD20003B570 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA771ADE21E73CD20003B570 /* MealTableViewCell.swift */; };
+		AA771AE121E73CD20003B570 /* MealTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA771ADF21E73CD20003B570 /* MealTableViewCell.xib */; };
+		AA7A7D6A21ECAAD100448690 /* MealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7A7D6821ECAAD100448690 /* MealsViewController.swift */; };
+		AA7A7D6B21ECAAD100448690 /* MealsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA7A7D6921ECAAD100448690 /* MealsViewController.xib */; };
+		AA81650021CE77F0002247E8 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8164FF21CE77F0002247E8 /* Group.swift */; };
+		AA81650221CE7851002247E8 /* GroupEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA81650121CE7851002247E8 /* GroupEntity.swift */; };
+		AA81650421CE7BF5002247E8 /* LocalGroupRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA81650321CE7BF5002247E8 /* LocalGroupRepository.swift */; };
+		AA81650921CE7E9B002247E8 /* GroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA81650721CE7E9B002247E8 /* GroupTableViewCell.swift */; };
+		AA81650A21CE7E9B002247E8 /* GroupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA81650821CE7E9B002247E8 /* GroupTableViewCell.xib */; };
+		AA81651721CE8234002247E8 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA81651521CE8234002247E8 /* GroupViewController.swift */; };
+		AA81651821CE8234002247E8 /* GroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA81651621CE8234002247E8 /* GroupViewController.xib */; };
+		AA81651E21CE8635002247E8 /* EmptyGroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA81651C21CE8635002247E8 /* EmptyGroupTableViewCell.swift */; };
+		AA81651F21CE8635002247E8 /* EmptyGroupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA81651D21CE8635002247E8 /* EmptyGroupTableViewCell.xib */; };
+		AA81652721CE8B1D002247E8 /* AddGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA81652521CE8B1D002247E8 /* AddGroupViewController.swift */; };
+		AA81652821CE8B1D002247E8 /* AddGroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA81652621CE8B1D002247E8 /* AddGroupViewController.xib */; };
+		AA88FA5421DE86DB002682C2 /* ParticipantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA88FA5221DE86DB002682C2 /* ParticipantDetailViewController.swift */; };
+		AA88FA5521DE86DB002682C2 /* ParticipantDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA88FA5321DE86DB002682C2 /* ParticipantDetailViewController.xib */; };
+		AA9E2F3F21E89C4900F6A4C2 /* EditParticipantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9E2F3D21E89C4900F6A4C2 /* EditParticipantViewController.swift */; };
+		AA9E2F4021E89C4900F6A4C2 /* EditParticipantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA9E2F3E21E89C4900F6A4C2 /* EditParticipantViewController.xib */; };
+		AADE599E21D9208F00DB770E /* AddParticipantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADE599C21D9208F00DB770E /* AddParticipantViewController.swift */; };
+		AADE599F21D9208F00DB770E /* AddParticipantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AADE599D21D9208F00DB770E /* AddParticipantViewController.xib */; };
+		AAFFBF8E21CD4C1F00965FF0 /* Participant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFFBF8D21CD4C1F00965FF0 /* Participant.swift */; };
+		AAFFBF9021CD4C9400965FF0 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFFBF8F21CD4C9400965FF0 /* Meal.swift */; };
+		AAFFBF9321CD543700965FF0 /* ParticipantEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFFBF9221CD543700965FF0 /* ParticipantEntity.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		497E27C1AEC33B094E7C76F4 /* Pods-CenaOMatic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CenaOMatic.release.xcconfig"; path = "Pods/Target Support Files/Pods-CenaOMatic/Pods-CenaOMatic.release.xcconfig"; sourceTree = "<group>"; };
+		6E8D2ADF3B3E7CB023DA4C75 /* Pods-CenaOMatic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CenaOMatic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CenaOMatic/Pods-CenaOMatic.debug.xcconfig"; sourceTree = "<group>"; };
+		AA48ACE221CD5C0100F20F6E /* MealEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealEntity.swift; sourceTree = "<group>"; };
+		AA48ACE521CD5EF200F20F6E /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		AA48ACE721CD5F2000F20F6E /* LocalMealRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalMealRepository.swift; sourceTree = "<group>"; };
+		AA48ACE921CD624600F20F6E /* LocalParticipantRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalParticipantRepository.swift; sourceTree = "<group>"; };
+		AA74212921D113DE009DADE8 /* ParticipantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantsViewController.swift; sourceTree = "<group>"; };
+		AA74212A21D113DE009DADE8 /* ParticipantsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParticipantsViewController.xib; sourceTree = "<group>"; };
+		AA74213421D11633009DADE8 /* ParticipantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantTableViewCell.swift; sourceTree = "<group>"; };
+		AA74213521D11633009DADE8 /* ParticipantTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParticipantTableViewCell.xib; sourceTree = "<group>"; };
+		AA75694821CD477E001464FA /* CenaOMatic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CenaOMatic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA75694B21CD477E001464FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA75695221CD4780001464FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA75695521CD4780001464FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AA75695721CD4780001464FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA771ADE21E73CD20003B570 /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
+		AA771ADF21E73CD20003B570 /* MealTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MealTableViewCell.xib; sourceTree = "<group>"; };
+		AA7A7D6821ECAAD100448690 /* MealsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsViewController.swift; sourceTree = "<group>"; };
+		AA7A7D6921ECAAD100448690 /* MealsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MealsViewController.xib; sourceTree = "<group>"; };
+		AA8164FF21CE77F0002247E8 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		AA81650121CE7851002247E8 /* GroupEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupEntity.swift; sourceTree = "<group>"; };
+		AA81650321CE7BF5002247E8 /* LocalGroupRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalGroupRepository.swift; sourceTree = "<group>"; };
+		AA81650721CE7E9B002247E8 /* GroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTableViewCell.swift; sourceTree = "<group>"; };
+		AA81650821CE7E9B002247E8 /* GroupTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupTableViewCell.xib; sourceTree = "<group>"; };
+		AA81651521CE8234002247E8 /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
+		AA81651621CE8234002247E8 /* GroupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupViewController.xib; sourceTree = "<group>"; };
+		AA81651C21CE8635002247E8 /* EmptyGroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyGroupTableViewCell.swift; sourceTree = "<group>"; };
+		AA81651D21CE8635002247E8 /* EmptyGroupTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyGroupTableViewCell.xib; sourceTree = "<group>"; };
+		AA81652521CE8B1D002247E8 /* AddGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGroupViewController.swift; sourceTree = "<group>"; };
+		AA81652621CE8B1D002247E8 /* AddGroupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddGroupViewController.xib; sourceTree = "<group>"; };
+		AA88FA5221DE86DB002682C2 /* ParticipantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantDetailViewController.swift; sourceTree = "<group>"; };
+		AA88FA5321DE86DB002682C2 /* ParticipantDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParticipantDetailViewController.xib; sourceTree = "<group>"; };
+		AA9E2F3D21E89C4900F6A4C2 /* EditParticipantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditParticipantViewController.swift; sourceTree = "<group>"; };
+		AA9E2F3E21E89C4900F6A4C2 /* EditParticipantViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditParticipantViewController.xib; sourceTree = "<group>"; };
+		AADE599C21D9208F00DB770E /* AddParticipantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddParticipantViewController.swift; sourceTree = "<group>"; };
+		AADE599D21D9208F00DB770E /* AddParticipantViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddParticipantViewController.xib; sourceTree = "<group>"; };
+		AAFFBF8D21CD4C1F00965FF0 /* Participant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Participant.swift; sourceTree = "<group>"; };
+		AAFFBF8F21CD4C9400965FF0 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		AAFFBF9221CD543700965FF0 /* ParticipantEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantEntity.swift; sourceTree = "<group>"; };
+		F0430085B0140835B904A7F1 /* Pods_CenaOMatic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CenaOMatic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA75694521CD477E001464FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5868C7BFDE03BE42893F6906 /* Pods_CenaOMatic.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4995B5F9AA7AA2B1DC9A8515 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E8D2ADF3B3E7CB023DA4C75 /* Pods-CenaOMatic.debug.xcconfig */,
+				497E27C1AEC33B094E7C76F4 /* Pods-CenaOMatic.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9107CDF9CE5E6C23F2E302CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0430085B0140835B904A7F1 /* Pods_CenaOMatic.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA48ACE421CD5EDA00F20F6E /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				AA48ACE521CD5EF200F20F6E /* Repository.swift */,
+				AA48ACE721CD5F2000F20F6E /* LocalMealRepository.swift */,
+				AA48ACE921CD624600F20F6E /* LocalParticipantRepository.swift */,
+				AA81650321CE7BF5002247E8 /* LocalGroupRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		AA74212621D11369009DADE8 /* ParticipantsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AA74212921D113DE009DADE8 /* ParticipantsViewController.swift */,
+				AA74212A21D113DE009DADE8 /* ParticipantsViewController.xib */,
+			);
+			path = ParticipantsViewController;
+			sourceTree = "<group>";
+		};
+		AA74212D21D11592009DADE8 /* ParticipantTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				AA74213421D11633009DADE8 /* ParticipantTableViewCell.swift */,
+				AA74213521D11633009DADE8 /* ParticipantTableViewCell.xib */,
+			);
+			path = ParticipantTableViewCell;
+			sourceTree = "<group>";
+		};
+		AA75693F21CD477E001464FA = {
+			isa = PBXGroup;
+			children = (
+				AA75694A21CD477E001464FA /* CenaOMatic */,
+				AA75694921CD477E001464FA /* Products */,
+				4995B5F9AA7AA2B1DC9A8515 /* Pods */,
+				9107CDF9CE5E6C23F2E302CC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AA75694921CD477E001464FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA75694821CD477E001464FA /* CenaOMatic.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA75694A21CD477E001464FA /* CenaOMatic */ = {
+			isa = PBXGroup;
+			children = (
+				AA81650521CE7E4B002247E8 /* Cells */,
+				AA48ACE421CD5EDA00F20F6E /* Repositories */,
+				AAFFBF9121CD53E800965FF0 /* Entities */,
+				AAFFBF8C21CD4BC600965FF0 /* Models */,
+				AAFFBF8621CD4AF200965FF0 /* ViewControllers */,
+				AA75694B21CD477E001464FA /* AppDelegate.swift */,
+				AA75695221CD4780001464FA /* Assets.xcassets */,
+				AA75695421CD4780001464FA /* LaunchScreen.storyboard */,
+				AA75695721CD4780001464FA /* Info.plist */,
+			);
+			path = CenaOMatic;
+			sourceTree = "<group>";
+		};
+		AA771ADD21E73CAA0003B570 /* MealTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				AA771ADE21E73CD20003B570 /* MealTableViewCell.swift */,
+				AA771ADF21E73CD20003B570 /* MealTableViewCell.xib */,
+			);
+			path = MealTableViewCell;
+			sourceTree = "<group>";
+		};
+		AA7A7D6721ECAAB600448690 /* MealsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AA7A7D6821ECAAD100448690 /* MealsViewController.swift */,
+				AA7A7D6921ECAAD100448690 /* MealsViewController.xib */,
+			);
+			path = MealsViewController;
+			sourceTree = "<group>";
+		};
+		AA81650521CE7E4B002247E8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AA771ADD21E73CAA0003B570 /* MealTableViewCell */,
+				AA74212D21D11592009DADE8 /* ParticipantTableViewCell */,
+				AA81651921CE85E2002247E8 /* EmptyGroupTableViewCell */,
+				AA81650621CE7E55002247E8 /* GroupTableViewCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		AA81650621CE7E55002247E8 /* GroupTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				AA81650721CE7E9B002247E8 /* GroupTableViewCell.swift */,
+				AA81650821CE7E9B002247E8 /* GroupTableViewCell.xib */,
+			);
+			path = GroupTableViewCell;
+			sourceTree = "<group>";
+		};
+		AA81651421CE820A002247E8 /* GroupViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AA81651521CE8234002247E8 /* GroupViewController.swift */,
+				AA81651621CE8234002247E8 /* GroupViewController.xib */,
+			);
+			path = GroupViewController;
+			sourceTree = "<group>";
+		};
+		AA81651921CE85E2002247E8 /* EmptyGroupTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				AA81651C21CE8635002247E8 /* EmptyGroupTableViewCell.swift */,
+				AA81651D21CE8635002247E8 /* EmptyGroupTableViewCell.xib */,
+			);
+			path = EmptyGroupTableViewCell;
+			sourceTree = "<group>";
+		};
+		AA81652021CE8AAD002247E8 /* AddGroupViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AA81652521CE8B1D002247E8 /* AddGroupViewController.swift */,
+				AA81652621CE8B1D002247E8 /* AddGroupViewController.xib */,
+			);
+			path = AddGroupViewController;
+			sourceTree = "<group>";
+		};
+		AA88FA5121DE86A9002682C2 /* ParticipantDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AA88FA5221DE86DB002682C2 /* ParticipantDetailViewController.swift */,
+				AA88FA5321DE86DB002682C2 /* ParticipantDetailViewController.xib */,
+			);
+			path = ParticipantDetailViewController;
+			sourceTree = "<group>";
+		};
+		AAAC3FF721E7C71F001CC25D /* EditParticipantViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AA9E2F3D21E89C4900F6A4C2 /* EditParticipantViewController.swift */,
+				AA9E2F3E21E89C4900F6A4C2 /* EditParticipantViewController.xib */,
+			);
+			path = EditParticipantViewController;
+			sourceTree = "<group>";
+		};
+		AADE599B21D9206A00DB770E /* AddParticipantViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AADE599C21D9208F00DB770E /* AddParticipantViewController.swift */,
+				AADE599D21D9208F00DB770E /* AddParticipantViewController.xib */,
+			);
+			path = AddParticipantViewController;
+			sourceTree = "<group>";
+		};
+		AAFFBF8621CD4AF200965FF0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AA7A7D6721ECAAB600448690 /* MealsViewController */,
+				AAAC3FF721E7C71F001CC25D /* EditParticipantViewController */,
+				AA88FA5121DE86A9002682C2 /* ParticipantDetailViewController */,
+				AADE599B21D9206A00DB770E /* AddParticipantViewController */,
+				AA74212621D11369009DADE8 /* ParticipantsViewController */,
+				AA81652021CE8AAD002247E8 /* AddGroupViewController */,
+				AA81651421CE820A002247E8 /* GroupViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AAFFBF8C21CD4BC600965FF0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AAFFBF8D21CD4C1F00965FF0 /* Participant.swift */,
+				AAFFBF8F21CD4C9400965FF0 /* Meal.swift */,
+				AA8164FF21CE77F0002247E8 /* Group.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AAFFBF9121CD53E800965FF0 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				AAFFBF9221CD543700965FF0 /* ParticipantEntity.swift */,
+				AA48ACE221CD5C0100F20F6E /* MealEntity.swift */,
+				AA81650121CE7851002247E8 /* GroupEntity.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA75694721CD477E001464FA /* CenaOMatic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA75695A21CD4780001464FA /* Build configuration list for PBXNativeTarget "CenaOMatic" */;
+			buildPhases = (
+				88CDABE417566C08ECB0EC00 /* [CP] Check Pods Manifest.lock */,
+				AA75694421CD477E001464FA /* Sources */,
+				AA75694521CD477E001464FA /* Frameworks */,
+				AA75694621CD477E001464FA /* Resources */,
+				4022F52F232B12362A9E02AB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CenaOMatic;
+			productName = CenaOMatic;
+			productReference = AA75694821CD477E001464FA /* CenaOMatic.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA75694021CD477E001464FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Alvaro Sanz Rodrigo";
+				TargetAttributes = {
+					AA75694721CD477E001464FA = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = AA75694321CD477E001464FA /* Build configuration list for PBXProject "CenaOMatic" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA75693F21CD477E001464FA;
+			productRefGroup = AA75694921CD477E001464FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA75694721CD477E001464FA /* CenaOMatic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA75694621CD477E001464FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AADE599F21D9208F00DB770E /* AddParticipantViewController.xib in Resources */,
+				AA81652821CE8B1D002247E8 /* AddGroupViewController.xib in Resources */,
+				AA81651821CE8234002247E8 /* GroupViewController.xib in Resources */,
+				AA75695621CD4780001464FA /* LaunchScreen.storyboard in Resources */,
+				AA75695321CD4780001464FA /* Assets.xcassets in Resources */,
+				AA81650A21CE7E9B002247E8 /* GroupTableViewCell.xib in Resources */,
+				AA7A7D6B21ECAAD100448690 /* MealsViewController.xib in Resources */,
+				AA9E2F4021E89C4900F6A4C2 /* EditParticipantViewController.xib in Resources */,
+				AA74212C21D113DE009DADE8 /* ParticipantsViewController.xib in Resources */,
+				AA771AE121E73CD20003B570 /* MealTableViewCell.xib in Resources */,
+				AA88FA5521DE86DB002682C2 /* ParticipantDetailViewController.xib in Resources */,
+				AA81651F21CE8635002247E8 /* EmptyGroupTableViewCell.xib in Resources */,
+				AA74213721D11633009DADE8 /* ParticipantTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4022F52F232B12362A9E02AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CenaOMatic/Pods-CenaOMatic-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CenaOMatic/Pods-CenaOMatic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88CDABE417566C08ECB0EC00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CenaOMatic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA75694421CD477E001464FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA48ACE621CD5EF200F20F6E /* Repository.swift in Sources */,
+				AA81651E21CE8635002247E8 /* EmptyGroupTableViewCell.swift in Sources */,
+				AAFFBF9021CD4C9400965FF0 /* Meal.swift in Sources */,
+				AAFFBF9321CD543700965FF0 /* ParticipantEntity.swift in Sources */,
+				AA771AE021E73CD20003B570 /* MealTableViewCell.swift in Sources */,
+				AA81652721CE8B1D002247E8 /* AddGroupViewController.swift in Sources */,
+				AA81650021CE77F0002247E8 /* Group.swift in Sources */,
+				AA75694C21CD477E001464FA /* AppDelegate.swift in Sources */,
+				AA74213621D11633009DADE8 /* ParticipantTableViewCell.swift in Sources */,
+				AAFFBF8E21CD4C1F00965FF0 /* Participant.swift in Sources */,
+				AA74212B21D113DE009DADE8 /* ParticipantsViewController.swift in Sources */,
+				AA7A7D6A21ECAAD100448690 /* MealsViewController.swift in Sources */,
+				AA88FA5421DE86DB002682C2 /* ParticipantDetailViewController.swift in Sources */,
+				AADE599E21D9208F00DB770E /* AddParticipantViewController.swift in Sources */,
+				AA48ACEA21CD624600F20F6E /* LocalParticipantRepository.swift in Sources */,
+				AA48ACE821CD5F2000F20F6E /* LocalMealRepository.swift in Sources */,
+				AA81650421CE7BF5002247E8 /* LocalGroupRepository.swift in Sources */,
+				AA81650221CE7851002247E8 /* GroupEntity.swift in Sources */,
+				AA81651721CE8234002247E8 /* GroupViewController.swift in Sources */,
+				AA9E2F3F21E89C4900F6A4C2 /* EditParticipantViewController.swift in Sources */,
+				AA81650921CE7E9B002247E8 /* GroupTableViewCell.swift in Sources */,
+				AA48ACE321CD5C0100F20F6E /* MealEntity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AA75695421CD4780001464FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA75695521CD4780001464FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA75695821CD4780001464FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA75695921CD4780001464FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA75695B21CD4780001464FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E8D2ADF3B3E7CB023DA4C75 /* Pods-CenaOMatic.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TJ5Z496VWC;
+				INFOPLIST_FILE = CenaOMatic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.alvarosanzrodrigo.CenaOMatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA75695C21CD4780001464FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 497E27C1AEC33B094E7C76F4 /* Pods-CenaOMatic.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TJ5Z496VWC;
+				INFOPLIST_FILE = CenaOMatic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.alvarosanzrodrigo.CenaOMatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA75694321CD477E001464FA /* Build configuration list for PBXProject "CenaOMatic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA75695821CD4780001464FA /* Debug */,
+				AA75695921CD4780001464FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA75695A21CD4780001464FA /* Build configuration list for PBXNativeTarget "CenaOMatic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA75695B21CD4780001464FA /* Debug */,
+				AA75695C21CD4780001464FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA75694021CD477E001464FA /* Project object */;
+}
